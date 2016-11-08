@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PianoKeyScript : MonoBehaviour {
-
+    public KeyCode Key;
     //public float SemiToneOffset=0;
 
 	// Use this for initialization
@@ -12,8 +12,19 @@ public class PianoKeyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        if (Input.GetKeyDown(Key))
+        {
+            AudioSource SE = GetComponent<AudioSource>();
+            SE.Play();
+            gameObject.transform.Rotate(2, 0, 0);           
+        }
+        if (Input.GetKeyUp(Key))
+        {
+            gameObject.transform.Rotate(-2, 0, 0);
+        }
     }
+
+
 
     void OnMouseDown()
     {
