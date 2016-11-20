@@ -6,6 +6,7 @@ public class HintScript : MonoBehaviour {
     public Image myPanel;
     public GameObject Text1;
     public GameObject Text2;
+    public GameObject Text3;
     float fadeTime = 2f;
     Color colorToFadeTo;
 
@@ -20,8 +21,13 @@ public class HintScript : MonoBehaviour {
         {
             colorToFadeTo = new Color(0f, 0f, 0f, 0f);
             myPanel.CrossFadeColor(colorToFadeTo, fadeTime, true, true);
-            Text1.GetComponent<Text>().CrossFadeAlpha(0.0f, 2.0f, false);
-            Text2.GetComponent<Text>().CrossFadeAlpha(0.0f, 2.0f, false);
+            fadeText(Text1);
+            fadeText(Text2);
+            fadeText(Text3);
         }
 	}
+
+    void fadeText(GameObject text) {
+        text.GetComponent<Text>().CrossFadeAlpha(0.0f, 2.0f, false);
+    }
 }

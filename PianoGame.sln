@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoGame.CSharp.Plugins", "PianoGame.CSharp.Plugins.csproj", "{894D8F2B-7998-A11D-0155-209ACBAEE145}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoGame.CSharp", "PianoGame.CSharp.csproj", "{AA514849-D316-7A38-EFEC-194CB87387A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoGame.CSharp.Editor", "PianoGame.CSharp.Editor.csproj", "{ECB08052-2242-FAC7-857C-574BEEE8E081}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{894D8F2B-7998-A11D-0155-209ACBAEE145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894D8F2B-7998-A11D-0155-209ACBAEE145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894D8F2B-7998-A11D-0155-209ACBAEE145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894D8F2B-7998-A11D-0155-209ACBAEE145}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA514849-D316-7A38-EFEC-194CB87387A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA514849-D316-7A38-EFEC-194CB87387A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA514849-D316-7A38-EFEC-194CB87387A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA514849-D316-7A38-EFEC-194CB87387A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB08052-2242-FAC7-857C-574BEEE8E081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB08052-2242-FAC7-857C-574BEEE8E081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB08052-2242-FAC7-857C-574BEEE8E081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB08052-2242-FAC7-857C-574BEEE8E081}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
